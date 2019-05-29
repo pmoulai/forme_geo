@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les Formes Geométriques</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my_css.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cercle.html">Cercle</a></li>
+                <li><a href="rectangle.html">Rectangle</a></li>
+                <li><a href="ligne.html">Ligne</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Formes géographiques</h1>
+        <div class="row">
+            <div class="col-xs-2" >
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseCircle" aria-expanded="false" aria-controls="collapseCircle">
+                    Cercle
+                </button>
+            </div>
+            <div class="col-xs-10"  class="collapse" aria-expanded="true" id="collapseCircle" >
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <input type="range" id="sliderCircle" name="sliderCircle" min="0" max="360">Angle du cercle</input>
+                            </div>
+                            <div class="col-xs-2" id="valueAngleCercle" ></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <input type="range"  id="sliderRadius" name="sliderRadius" min="0" max="160">Radius</input>
+                            </div>
+                            <div class="col-xs-2" id="valueRadiusCercle" >
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <input type="range"  id="sliderAngleDepart" name="sliderAngleDepart" min="0" max="360">Rotation</input>
+                            </div>
+                            <div class="col-xs-2" id="valueAngleDepartCercle" ></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8" >
+                            <div class="row">
+                                <input type="range"  id="circleRed" name="circleRed" min="0" max="255">Red</input>
+                            </div>
+                            <div class="row">
+                                <input type="range"  id="circleGreen" name="circleGreen" min="0" max="255">Green</input>
+                            </div>
+                            <div class="row">
+                                <input type="range"  id="circleBlue" name="circleBlue" min="0" max="255">Blue</input>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2"> <canvas  width="50" height="50"  id="circle_color" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div  class="col-xs-4" >
+                    <canvas width="400" height="400"  id="forme_circle" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /.container -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jquery/cercle.js" ></script>
+</body>
+</html>
